@@ -1,0 +1,55 @@
+<!-- Nav Bar -->
+<section id="navigation">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand text-reset" href="/"
+        >LOGO
+        <!-- <img
+              class="logo"
+              src="./images/StreetKidsCan logo.jpeg"
+              alt="StreetKidsCan Logo"
+            /> -->
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-text text-reset" href="{% url 'homepage' %}"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'whoweare' %}" class="nav-link nav-text text-reset"
+              >Who We Are <i class="fa-light fa-chevron-down"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'programs' %}" class="nav-link nav-text text-reset"
+              >Programs <i class="fa-light fa-chevron-down"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'impact' %}" class="nav-link nav-text text-reset">Make an Impact</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'contact' %}" class="nav-link nav-text text-reset">Get in Touch</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'donate' %}" class="nav-link nav-donate text-reset">DONATE</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>

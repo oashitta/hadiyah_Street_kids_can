@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: "Montserrat";
+  color: #020202;
+}
+
+/* Sections */
+.grey-section {
+  background-color: #f8f8f8;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.pink-section {
+  background-color: #f8e9ed;
+}
+
+.container-fluid {
+  margin: 2% auto;
+  padding: 5% 10%;
+}
+
+/* NavBar */
+
+#navigation {
+  margin: 2% auto;
+  padding: 0 10%;
+  background-color: #b00f21;
+  color: white;
+}
+
+.logo {
+  width: 70px;
+  height: 32px;
+}
+
+.nav-text {
+  color: black;
+}
+
+.nav-donate {
+  color: red;
+}
+
+.nav-donate:hover {
+  border: solid;
+  background-color: red;
+  color: white;
+  /* background-color: white;
+    color: #b00f21; */
+  border-radius: 5px;
+}
+
+.nav-text:hover {
+  color: red;
+}
+
+/* Hero Section */
+
+#hero {
+  text-align: left;
+}
+.hero-image {
+  height: 350px;
+  width: 350px;
+  border-radius: 100%;
+  background-color: #f8e9ed;
+}
+.hero-container {
+  padding: 5% 7%;
+}
+
+/* home-mission */
+#mission {
+  text-align: right;
+}
+
+/* programs */
+.card-text {
+  text-align: left;
+}
+
+.card-image {
+  height: 250px;
+  width: 250px;
+  background-color: #f8e9ed;
+}
+
+.card-col {
+  padding: 3% 5%;
+}
+
+/* volunteers */
+.volunteer-image,
+.sponsor-image,
+.leadership-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-color: #f8e9ed;
+}
+
+/* footer */
+#footer {
+  background-color: #b00f21;
+  color: #fff;
+  text-align: left;
+  margin: 0;
+}
