@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'my_pages_app.apps.MyPagesAppConfig',
+    'users.apps.UsersConfig',
+    'rest_framework',
+    'fontawesomefree',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +129,6 @@ STATICFILES_DIRS = (
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# user model
+AUTH_USER_MODEL = 'users.CustomUser'
