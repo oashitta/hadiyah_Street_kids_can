@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-align: center;
   font-weight: "Montserrat";
@@ -36,10 +37,6 @@ body {
 .logo {
   width: 70px;
   height: 32px;
-}
-
-.nav-text {
-  color: black;
 }
 
 .nav-donate {

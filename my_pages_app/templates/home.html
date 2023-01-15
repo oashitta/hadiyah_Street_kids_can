@@ -9,12 +9,10 @@
               “You give but little when you give of your possessions. It is when you give of yourself that you truly give."
             </h2>
             <p>Kahlil Gibran</p>
-            <button type="button" class="btn btn-danger btn-lg mt-5 mb-4">
-              Explore Now
-            </button>
+            <a class="btn btn-danger" href="{% url 'impact' %}" role="button">Work with Us.</a>
           </div>
-          <div class="hero-image mx-auto col-10 col-sm-8 col-lg-6">
-            <!-- <img class="" src="" alt="" /> -->
+          <div class="mx-auto col-10 col-sm-8 col-lg-6">
+            <img class="img-fluid" src="/static/images/home_smiles.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -24,104 +22,74 @@
     <section id="mission" class="white-section">
       <div class="container-fluid">
         <div class="row">
-          <div class="hero-image col-lg-4">
-            <img src="" alt="" />
+          <div class="col-lg-6">
+            <img class="img-fluid" src="/static/images/target3.jpg" alt="" />
           </div>
 
-          <div class="col-lg-8">
-            <h3>Our Mission</h3>
+          <div class="col-lg-6 align-self-center">
+            <h1>Our Mission</h1>
             <p>
               To empower street children to find their path out of poverty by nurturing their strengths and talents through informal educational activities.
             </p>
-            <a href="">Learn How to Volunteer</a>
+            <a href="">Learn more about us.</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- programs -->
-    <section id="home-programs" class="grey-section pt-4 pb-4">
-      <h2>Programs</h2>
-      <div class="card-text container-fluid">
-        <div class="row">
-          <div class="card col-lg-3" style="width: 18rem">
-            <div class="card-image">
-              <!-- insert image tag and image -->
-            </div>
+    <section id="home-programs" class="grey-section pt-4 pb-4 ">
+
+      <h1 class="mt-5 pt-5">Our Programs</h1>
+      
+      <!-- need to style the cards in a way that when it is on medium screen it is 2 in a row. -->
+      <div class="container-fluid text-start">
+        <div class="card-group">
+          <div class="card">
+            <img src="/static/images/support.jpg" class="card-img-top" alt="program image">
             <div class="card-body">
               <h5 class="card-title">Mobile Learning Outreach</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-
-            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up
+                        the bulk of the card's content.</p>
               <a href="#" class="card-link">See more...</a>
             </div>
           </div>
-
-          <div class="card col-lg-3" style="width: 18rem">
-            <div class="card-image">
-              <!-- insert image tag and image -->
-            </div>
+          <div class="card">
+            <img src="/static/images/support.jpg" class="card-img-top" alt="program image">
             <div class="card-body">
               <h5 class="card-title">Mentoring & Counselling</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-
-            <div class="card-body">
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="card-link">See more...</a>
             </div>
           </div>
-
-          <div class="card col-lg-3 " style="width: 18rem">
-            <div class="card-image">
-              <!-- insert image tag and image -->
+          <div class="card">
+            <img src="/static/images/support.jpg" class="card-img-top" alt="program image">
+            <div class="card-body">
+              <h5 class="card-title">Community Support</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <a href="#" class="card-link">See more...</a>
+          
             </div>
+          </div>
+          <div class="card">
+            <img src="/static/images/support.jpg" class="card-img-top" alt="program image">
             <div class="card-body">
               <h5 class="card-title">Placement and Reintegration</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-
-            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               <a href="#" class="card-link">See more...</a>
-            </div>
             
             </div>
-  
-            <div class="card col-lg-3" style="width: 18rem">
-              <div class="card-image">
-                <!-- insert image tag and image -->
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Community Support</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-  
-              <div class="card-body">
-                <a href="#" class="card-link">See more...</a>
-              </div>
           </div>
         </div>
       </div>
+      
+      <a class="btn btn-danger" href="{% url 'programs' %}" role="button">Explore our programs</a>
 
-      <button type="button" class="btn btn-danger btn-lg mt-5 mb-4">
-        Explore more programs
       </button>
     </section>
 
     <!-- our volunteers-->
-
+<!-- 
     <section id="home-volunteers" class="pt-5">
       <h2>Our Volunteers</h2>
       <p>some of our volunteers include</p>
@@ -137,25 +105,26 @@
             <a href="">More about our team</a>
          </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- donations -->
 
-    <section id="home-donations" class="grey-section pt-5 pb-5">
-      <h2>Donations</h2>
+    <section id="home-donations" class="white-section pt-5 pb-5">
+      <h1>Donations</h1>
       <p>
-        Thak to your generosity, we have received a total of N000,000,000 in
+        Thanks to your generosity, we have received a total of N000,000,000 in
         donations which have gone towards the execution of XYZ.
       </p>
-      <h4>If you would like to donatem kindly click the button below.</h4>
-      <button type="button" class="btn btn-danger btn-lg mt-5 mb-4">Make a Donation</button>
+      <h3>If you would like to donatem kindly click the button below.</h3>
+      <a class="btn btn-danger" href="{% url 'donate' %}" role="button">Make a donation</a>
+     
     </section>
 
     <!-- sponsors -->
-    <section id="sponsors" class="pt-5" >
+    <section id="sponsors" class=" grey-section pt-5" >
         <h2>Our Sponsors Include:</h2>
         <div class="container-fluid">
-            <div class="rows d-flex justify-content-center">
+            <div class="rows d-flex justify-content-center gap-3">
             <div class="volunteer-image col-sm-3"></div>
             <div class="volunteer-image col-sm-3"></div>
             <div class="volunteer-image col-sm-3"></div>
