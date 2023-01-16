@@ -7,6 +7,19 @@ body {
   color: #020202;
 }
 
+/* buttons */
+.btn-bg {
+  background-color: #ff4552;
+}
+
+.btn:hover {
+  border: 1rem;
+}
+
+.btn-color {
+  color: #fff;
+}
+
 /* Sections */
 .grey-section {
   background-color: #f8f8f8;
@@ -20,6 +33,8 @@ body {
   background-color: #f8e9ed;
 }
 
+/* container */
+
 .container-fluid {
   margin: 2% auto;
   padding: 5% 10%;
@@ -30,7 +45,7 @@ body {
 #navigation {
   margin: 2% auto 0;
   padding: 0 10%;
-  background-color: #b00f21;
+  background-color: #ff4552;
   color: white;
 }
 
@@ -40,12 +55,12 @@ body {
 }
 
 .nav-donate {
-  color: red;
+  color: #ff4552;
 }
 
 .nav-donate:hover {
   border: solid;
-  background-color: red;
+  background-color: #ff4552;
   color: white;
   /* background-color: white;
     color: #b00f21; */
@@ -53,7 +68,8 @@ body {
 }
 
 .nav-text:hover {
-  color: red;
+  color: white;
+  font-size: 700;
 }
 
 /* Hero Section */
@@ -103,7 +119,7 @@ body {
 
 /* footer */
 #footer {
-  background-color: #b00f21;
+  background-color: #ff4552;
   color: #fff;
   text-align: left;
   margin: 0;
@@ -111,7 +127,9 @@ body {
 
 /* form */
 
-input[type=text], input[type=email], textarea{
+input[type="text"],
+input[type="email"],
+textarea {
   padding: 12px 20px;
   margin: 8px auto;
   display: block;
@@ -120,7 +138,7 @@ input[type=text], input[type=email], textarea{
 /* donations page */
 
 /* contact page */
-.contact_hero{
+.contact_hero {
   margin: 2% auto;
   padding: 5% 20%;
 }

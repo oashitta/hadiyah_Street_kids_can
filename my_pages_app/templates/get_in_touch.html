@@ -1,52 +1,52 @@
 {% extends 'base.html' %} {% block content%}
-
-<div class="">
-    <img class="img-fluid" src="/static/images/passion.jpg" alt="contact us image">
+<div class="">        
+    <img class="img-fluid" src="/static/images/passion-min.jpg" alt="contact us image">
 </div>
 
-
 <div>
-    <div class="container-fluid contact_hero">
-        <div class="row">
-            <div class="col-lg-6 pt-3 pb-3">
-                <div class="pt-3 pb-3">
-                    <h3 class="text-start">Reach out to us</h3>
-                    <p class="text-start">you can contact us as follows:</p>
-                </div>
+    <div>
+        <div class="container-fluid contact_hero">
+            <div class="row">
+                <div class="col-lg-6 pt-3 pb-3">
+                    <div class="pt-3 pb-3">
+                        <h3 class="text-start">Reach out to us</h3>
+                        <p class="text-start">you can contact us as follows:</p>
+                    </div>
 
-                <div class="d-flex text-start ">
-                    <div class="row">
-                        <div class="col-lg-6 pt-4 pb-4">
-                            <i class="fa-light fa-phone"></i>
-                            <p>  call us </p>
-                            <p>0802 000 0000</p>
-                        </div>
+                    <div class="d-flex text-start ">
+                        <div class="row">
+                            <div class="col-lg-6 pt-4 pb-4">
+                                <i class="fa-light fa-phone"></i>
+                                <p>  call us </p>
+                                <p>0802 000 0000</p>
+                            </div>
 
-                        <div class="col-lg-6 pt-4 pb-4">
-                            <i class="fa-light fa-envelope"></i> 
-                            <p>Email us at:</p>  
-                            <p>Streetkidscan@gmail.com</p> 
-                        </div>
+                            <div class="col-lg-6 pt-4 pb-4">
+                                <i class="fa-light fa-envelope"></i> 
+                                <p>Email us at:</p>  
+                                <p>Streetkidscan@gmail.com</p> 
+                            </div>
 
-                        <div class="col-lg-6 pt-4 pb-4">
-                            <i class="fa-light fa-location-dot"></i>
-                            <p>find us at:</p>
-                            <p>Address</p>
-                            <p>Lagos, Nigeria</p>
-                        </div>
+                            <div class="col-lg-6 pt-4 pb-4">
+                                <i class="fa-light fa-location-dot"></i>
+                                <p>find us at:</p>
+                                <p>Address</p>
+                                <p>Lagos, Nigeria</p>
+                            </div>
 
-                        <div class="col-lg-6 pt-4 pb-4">
-                            <i class="fa-light fa-clock"></i>
-                            <p>Working Hours</p>
-                            <p>Monday - Friday</p>
-                            <p>10:00am to 4:00pm</p>
+                            <div class="col-lg-6 pt-4 pb-4">
+                                <i class="fa-light fa-clock"></i>
+                                <p>Working Hours</p>
+                                <p>Monday - Friday</p>
+                                <p>10:00am to 4:00pm</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                    <div class="col-lg-6 pt-3 pb-3">
+                        <a href="{% url 'contact_form' %}">Contact us</a>
+                    </div>
             </div>
-                <div class="col-lg-6 pt-3 pb-3">
-                    <a href="{% url 'contact_form' %}">Contact us</a>
-                </div>
         </div>
     </div>
 </div>
