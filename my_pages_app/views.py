@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from .forms import ContactForm
+from .forms import ContactForm, PartnershipForm
 
 def home(request):
     return render(request, 'home.html', {})
@@ -16,29 +16,31 @@ def make_an_impact(request):
     return render(request, 'make_an_impact.html', {})
 
 def get_in_touch(request):
-    return render(request, 'get_in_touch.html', {})
-
-def donate(request):
-    return render(request, 'donate.html', {})
-
-def contact_form(request):
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return render(request, 'success.html')
+            context = {'section':'contact'}
+            return render(request, 'success.html', context)
 
     form = ContactForm()
     context = {'form':form}
-    return render(request,'contact_form.html', context)
+    return render(request, 'get_in_touch.html', context)
+
+def donate(request):
+    return render(request, 'donate.html', {})
 
 def success(request):
     return HttpResponse("Thank you for contacting us. Your message has been sent successfully!")
 
+def partner_view(request):
+    if request.method == "POST":
+        form = PartnershipForm(request.POST)
+        if form.is_valid():
+            form.save()
+            context = {'section':'partner'}
+            return render(request, 'success.html', context)
 
-#    name = data["name"]
-#         email = data["email"]
-#         phone = data["phone"]
-#         message = data["message"]
-        
-#         return redirect('contact_form')
+    form = PartnershipForm()
+    context = {'form':form}
+    return render(request, 'partnership_form.html', context)

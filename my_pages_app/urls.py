@@ -10,7 +10,7 @@ urlpatterns = [
     path('makeanimpact/', views.make_an_impact, name='impact'),
     path('getintouch/', views.get_in_touch, name='contact'),
     path('donate/', views.donate, name='donate'),
-    path('contactform/', views.contact_form, name='contact_form'),
+    path('partner-with-us/', views.partner_view, name='partner_with_us'),
     path("success/", views.success, name="success"),
 
 ]

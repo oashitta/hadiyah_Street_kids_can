@@ -1,19 +1,16 @@
 from django import forms
 from django.forms import ModelForm
-from .models import Contact
+from .models import Contact, Partnership
 
+class PartnershipForm(ModelForm):
 
-INTEREST = (
-                    ("volunteering", "VOLUNTEERING"),
-                    ("partnering", "PARTNERING"),
-)
+    class Meta:
+        model = Partnership
+        fields = "__all__"
 
+  
 class ContactForm(ModelForm):
-    name = forms.CharField(required=True, label = 'Full Name')
-    email = forms.EmailField(required=True, label = 'Email')
-    phone = forms.CharField()
-    message = forms.CharField(widget= forms.Textarea(), required = True)
 
     class Meta:
         model = Contact
-        fields = '__all__'
+        fields = "__all__"

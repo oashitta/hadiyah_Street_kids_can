@@ -132,3 +132,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # user model
 AUTH_USER_MODEL = 'users.CustomUser'
+
+# DEFAULT EMAIL
+DEFAULT_FORM_EMAIL = 'noreply@streetkidscan.com'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

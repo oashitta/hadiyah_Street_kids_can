@@ -20,9 +20,21 @@
     <!-- <script src="https://kit.fontawesome.com/149ae3bfe5.js" crossorigin="anonymous"></script> -->
     <!-- <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css"> -->
 
-    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+    <link
+      href="{% static 'fontawesomefree/css/fontawesome.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/brands.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/solid.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Bootstrap Css -->
 
@@ -47,15 +59,14 @@
 
     <!-- External Css -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-
   </head>
 
   <body>
-    {% include "header.html" %} 
-      {% block content %} 
-
-      {% endblock %} 
-    
-    {% include "footer.html" %}
+    {% include "header.html" %} {% block content %}
+    <i class="fa-solid fa-user-chef"></i>
+    <!-- uses solid style -->
+    <i class="fa-brands fa-github-square"></i>
+    <!-- uses brand style -->
+    {% endblock %} {% include "footer.html" %}
   </body>
 </html>
