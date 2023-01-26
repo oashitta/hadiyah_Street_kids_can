@@ -1,15 +1,12 @@
 <!-- Nav Bar -->
-<section id="navigation">
+<section id="navigation" class="border border-warning">
   <div class="container">
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand text-reset" href="/"
-        >LOGO
-        <!-- <img
-              class="logo"
-              src="./images/StreetKidsCan logo.jpeg"
-              alt="StreetKidsCan Logo"
-            /> -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+  <!-- sticky navbar is not working -->
+      <a class="navbar-brand col-sm-1" href="/" style="height: 60px;">
+        <img src="/static/images/street kids.jpg" alt="" style="width:100%; height:60px;">
       </a>
+  
       <button
         class="navbar-toggler"
         type="button"
@@ -25,14 +22,14 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item px-2">
-            <a class="nav-link nav-text text-reset" href="{% url 'homepage' %}"
+            <a class="nav-link nav-text" href="{% url 'homepage' %}"
               >Home</a
             >
           </li>
-          <li class="nav-item dropdown px-2">
-            <a href="{% url 'whoweare' %}" class="nav-link nav-text text-reset d-inline-block">Who We are</a>
-            <a class="nav-link nav-text text-reset dropdown-toggle d-inline-block" href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-            <ul class="dropdown-menu">
+          <li class="nav-item dropdown px-2 ">
+            <a href="{% url 'whoweare' %}" class="nav-link nav-text d-inline-block">Who We are</a>
+            <a class="nav-link nav-text dropdown-toggle d-inline-block" href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+            <ul class="dropdown-menu px-3">
               <li><a class="dropdown-item" href="#"></a>Our Mission</li>
               <hr>
               <li><a class="dropdown-item" href="#"></a>Our Vision</li>
@@ -48,9 +45,9 @@
           </li>
         
           <li class="nav-item dropdown px-2">
-            <a href="{% url 'programs' %}" class="nav-link nav-text text-reset d-inline-block">Programs</a>
-            <a href="" class="nav-link nav-text text-reset dropdown-toggle d-inline-block" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a> 
-              <ul class="dropdown-menu">
+            <a href="{% url 'programs' %}" class="nav-link nav-text d-inline-block">Programs</a>
+            <a href="" class="nav-link nav-text dropdown-toggle d-inline-block" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a> 
+              <ul class="dropdown-menu px-3 ">
                 <li><a class="dropdown-item" href="#"></a>Mobile Learning Outreach</li>
                 <hr>
                 <li><a class="dropdown-item" href="#"></a>Mentoring and Counselling</li>
@@ -62,10 +59,10 @@
           </li>
   
           <li class="nav-item px-2">
-            <a href="{% url 'impact' %}" class="nav-link nav-text text-reset">Make an Impact</a>
+            <a href="{% url 'impact' %}" class="nav-link nav-text">Make an Impact</a>
           </li>
           <li class="nav-item px-2">
-            <a href="{% url 'contact' %}" class="nav-link nav-text text-reset">Get in Touch</a>
+            <a href="{% url 'contact' %}" class="nav-link nav-text ">Get in Touch</a>
           </li>
           <li class="nav-item px-2">
             <a href="{% url 'donate' %}" class="btn btn-outline-light">Donate</a>

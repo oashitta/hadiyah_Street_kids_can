@@ -6,18 +6,25 @@ body {
   font-weight: "Montserrat";
   color: #020202;
 }
+a{
+  color: #000;
+}
 
+a:hover{
+  color: #0d8dbb;
+}
 /* buttons */
-.btn-bg {
+.btn{
   background-color: #ff4552;
-}
-
-.btn:hover {
-  border: 1rem;
-}
-
-.btn-color {
   color: #fff;
+  transition: .4s all;
+}
+
+.btn:hover{
+  background-color: #ff4552;
+  color: white;
+  transform: scale(1.2);
+
 }
 
 /* Sections */
@@ -29,8 +36,15 @@ body {
   background-color: #fff;
 }
 
+.blue-section {
+  background-color: #71c2e0;
+}
+.yellow-section {
+  background-color:#fccd3e;
+}
+
 .pink-section {
-  background-color: #f8e9ed;
+  background-color: #ff4552;
 }
 
 /* container */
@@ -42,34 +56,41 @@ body {
 
 /* NavBar */
 
+#logo {
+  height: 100px;
+  width: 100px;
+}
+
+#logo img{
+  height: 100%;
+  width: 100%
+}
+
 #navigation {
   margin: 2% auto 0;
   padding: 0 10%;
-  background-color: #ff4552;
+  /* background-color: #ff4552; */
   color: white;
 }
 
-.logo {
-  width: 70px;
-  height: 32px;
+.border-warning{
+  border-color: #fdbf00 !important;
 }
 
-.nav-donate {
-  color: #ff4552;
-}
-
-.nav-donate:hover {
-  border: solid;
-  background-color: #ff4552;
-  color: white;
-  /* background-color: white;
-    color: #b00f21; */
-  border-radius: 5px;
+.nav-text{
+  color:#ff4552;
 }
 
 .nav-text:hover {
-  color: white;
-  font-size: 700;
+ color: #0d8dbb;
+}
+
+@media (min-width:576px){
+  .dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 /* Hero Section */
@@ -87,6 +108,19 @@ body {
   padding: 5% 7%;
 }
 
+
+/* home page */
+
+/* carousel */
+
+.c-item{
+  height: 500px;
+}
+
+.c-image{
+  height: 100%;
+}
+
 /* home-mission */
 #mission {
   text-align: right;
@@ -97,15 +131,23 @@ body {
   text-align: left;
 }
 
-.card-image {
+.programs_item{
+  height: 360px;
+}
+
+.programs_image{
+  height: 100%;
+  width: 100%;
+}
+/* .card-image {
   height: 250px;
   width: 250px;
   background-color: #f8e9ed;
-}
+} */
 
-.card-col {
+/* .card-col {
   padding: 3% 5%;
-}
+} */
 
 /* volunteers */
 .volunteer-image,
@@ -141,4 +183,14 @@ textarea {
 .contact_hero {
   margin: 2% auto;
   padding: 5% 20%;
+}
+
+.photo-item{
+height: 400px;
+}
+
+.photo-image{
+height: 100%;
+width: 100%;
+object-fit: cover;
 }
