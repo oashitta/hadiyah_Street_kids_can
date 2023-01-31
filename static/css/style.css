@@ -98,12 +98,8 @@ a:hover{
 #hero {
   text-align: left;
 }
-.hero-image {
-  height: 350px;
-  width: 350px;
-  border-radius: 100%;
-  background-color: #f8e9ed;
-}
+
+
 .hero-container {
   padding: 5% 7%;
 }
@@ -114,7 +110,7 @@ a:hover{
 /* carousel */
 
 .c-item{
-  height: 500px;
+  height: 400px;
 }
 
 .c-image{
@@ -139,15 +135,54 @@ a:hover{
   height: 100%;
   width: 100%;
 }
-/* .card-image {
-  height: 250px;
-  width: 250px;
-  background-color: #f8e9ed;
-} */
 
-/* .card-col {
-  padding: 3% 5%;
-} */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color:  #ff4552;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:  #ff4552;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color:  #ff4552;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:  #ff4552;
+}
 
 /* volunteers */
 .volunteer-image,
@@ -156,7 +191,7 @@ a:hover{
   height: 150px;
   width: 150px;
   border-radius: 100%;
-  background-color: #f8e9ed;
+  background-color: #0d8dbb;
 }
 
 /* footer */
@@ -193,4 +228,8 @@ height: 400px;
 height: 100%;
 width: 100%;
 object-fit: cover;
+}
+
+.contact-icon{
+  color: #ff4552;
 }
