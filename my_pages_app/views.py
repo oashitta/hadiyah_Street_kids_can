@@ -12,6 +12,18 @@ def who_we_are(request):
 def programs(request):
     return render(request, 'programs.html', {})
 
+def community_support(request):
+    return render(request, 'programs_community.html', {})
+
+def mentoring_counselling(request):
+    return render(request, 'programs_counselling.html', {})
+
+def placement_reintegration(request):
+    return render(request, 'programs_reintegration.html', {})
+
+def mobile_learning(request):
+    return render(request, 'programs_learning.html', {})
+
 def make_an_impact(request):
     return render(request, 'make_an_impact.html', {})
 

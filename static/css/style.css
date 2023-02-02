@@ -3,9 +3,16 @@ body {
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  font-weight: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   color: #020202;
 }
+
+h1, h2 {
+  font-weight: 800;
+  line-height: 1.2;
+}
+
 a{
   color: #000;
 }
@@ -24,7 +31,6 @@ a:hover{
   background-color: #ff4552;
   color: white;
   transform: scale(1.2);
-
 }
 
 /* Sections */
@@ -69,7 +75,6 @@ a:hover{
 #navigation {
   margin: 2% auto 0;
   padding: 0 10%;
-  /* background-color: #ff4552; */
   color: white;
 }
 
@@ -99,22 +104,38 @@ a:hover{
   text-align: left;
 }
 
-
 .hero-container {
   padding: 5% 7%;
 }
 
-
-/* home page */
-
-/* carousel */
-
+/* home page carousel */
 .c-item{
   height: 400px;
 }
 
 .c-image{
   height: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color:  #ff4552;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:  #ff4552;
 }
 
 /* home-mission */
@@ -136,56 +157,18 @@ a:hover{
   width: 100%;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
+.prog-header{
+  height: 250px;
+  }
+
+.prog-gradient{
+  background-image: linear-gradient(to bottom right, #fdbf00, #ff4552);
 }
 
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color:  #ff4552;
-}
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color:  #ff4552;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color:  #ff4552;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color:  #ff4552;
-}
+/* programs modal */
 
 /* volunteers */
-.volunteer-image,
 .sponsor-image,
 .leadership-image {
   height: 150px;
@@ -212,8 +195,6 @@ textarea {
   display: block;
 }
 
-/* donations page */
-
 /* contact page */
 .contact_hero {
   margin: 2% auto;
@@ -233,3 +214,5 @@ object-fit: cover;
 .contact-icon{
   color: #ff4552;
 }
+
+/* donations page */
