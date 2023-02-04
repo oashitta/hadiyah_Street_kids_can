@@ -90,14 +90,17 @@ a:hover{
  color: #0d8dbb;
 }
 
-
-
 @media (min-width:576px){
   .dropdown:hover .dropdown-menu{
     display: block;
     margin-top: 0;
     margin-left: 0;
   }
+}
+
+.dropdown-item:hover{
+background-color: #0d8dbb;
+color: #fff;
 }
 
 /* Hero Section */
@@ -167,6 +170,12 @@ a:hover{
   background-image: linear-gradient(to bottom right, #fdbf00, #ff4552);
 }
 
+#gallery > div > img:hover{
+  cursor: pointer;
+  transition: .4s all;
+  transform: scale(1.2);
+}
+
 
 /* programs modal */
 
@@ -200,7 +209,7 @@ textarea {
 /* contact page */
 .contact_hero {
   margin: 2% auto;
-  padding: 5% 20%;
+  /* padding: 5% 10%; */
 }
 
 .photo-item{
