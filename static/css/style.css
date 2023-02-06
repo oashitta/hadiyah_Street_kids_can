@@ -8,6 +8,7 @@ body {
   color: #020202;
 }
 
+
 h1, h2 {
   font-weight: 800;
   line-height: 1.2;
@@ -227,3 +228,24 @@ object-fit: cover;
 }
 
 /* donations page */
+
+/* Get in touch page */
+
+@media (max-width:768px){
+  /* 600px or smaller */
+  #hero{
+    /* background-color: orange; */
+    text-align: center;
+  }
+
+  .home-mission{
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  .mission-image{
+    /* visibility: hidden; */
+    display: none;
+  }
+  
+}

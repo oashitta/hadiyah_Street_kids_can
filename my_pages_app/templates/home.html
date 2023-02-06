@@ -2,17 +2,18 @@
     <!-- hero section -->
 
     <section id="hero" class="white-section">
-      <div class="container-fluid ">
+      <div class="container-fluid py-3">
         <div class="row pt-5 pb-5">
-          <div class="col-lg-6 pt-3 pb-3">
-            <h2 class="hero-heading display-5 fw-bold lh-1.5 mb-3">
+          <div class="col-md-6 pt-3 pb-3">
+            <h2 class="hero-heading display-5 fw-bold lh-1.4 mb-3">
               “You give but little when you give of your possessions. It is when you give of yourself that you truly give."
             </h2>
             <p>Kahlil Gibran</p>
-            <button class="btn btn-lg" >Work With Us.</button>
-  
+
+            <a class="btn btn-bg btn-color btn-lg" href="{% url 'impact' %}" role="button">Volunteer With Us.</a>
           </div>
-          <div class="mx-auto col-10 col-sm-8 col-lg-6">
+          
+          <div class="mx-auto col-sm-8 col-md-6">
             <img class="img-fluid rounded-4" src="/static/images/home_smiles.jpg" alt="" />
           </div>
         </div>
@@ -22,17 +23,17 @@
     <!-- mission -->
     <section id="mission" class="yellow-section">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-            <img class="img-fluid rounded-4" src="/static/images/target3.jpg" alt="" />
+        <div class="row pt-5 pb-5">
+          <div class="mx-auto col-md-6">
+            <img class="img-fluid rounded-4 mission-image" src="/static/images/target3.jpg" alt="" />
           </div>
 
-          <div class="col-lg-6 align-self-center">
+          <div class="col-md-6 align-self-center home-mission">
             <h1>Our Mission</h1>
             <p>
               To empower street children to find their path out of poverty by nurturing their strengths and talents through informal educational activities.
             </p>
-            <a href="">Learn more about us.</a>
+            <a href="{% url 'whoweare' %}">Learn more about us.</a>
           </div>
         </div>
       </div>
@@ -103,7 +104,7 @@
         donations which have gone towards the execution of XYZ.
       </p>
       <h3>If you would like to donate kindly click the button below.</h3>
-      <a class="btn btn-bg btn-color btn-lg" href="{% url 'donate' %}" role="button">Make a donation</a>
+      <a class="btn btn-bg btn-color btn-lg m-4" href="{% url 'donate' %}" role="button">Make a donation</a>
      
     </section>
 
@@ -111,11 +112,14 @@
     <section id="sponsors" class=" white-section pt-5" >
         <h2>Our Sponsors Include:</h2>
         <div class="container-fluid">
-            <div class="rows d-flex justify-content-center gap-5">
-            <div class="sponsor-image col-sm-3"></div>
-            <div class="sponsor-image col-sm-3"></div>
-            <div class="sponsor-image col-sm-3"></div>
-            <div class="sponsor-image col-sm-3"></div>
+          <div class="row gap-5 d-flex justify-content-center">
+            <div class="sponsor-image col-md-3"></div>
+            <div class="sponsor-image col-md-3"></div>
+            <div class="sponsor-image col-md-3"></div>
+            <div class="sponsor-image col-md-3"></div>
+            <div class="sponsor-image col-md-3"></div>
+            <div class="sponsor-image col-md-3"></div>
+          </div>
         </div>
     </section>
     {% endblock %}
