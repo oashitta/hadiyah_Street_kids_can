@@ -12,7 +12,7 @@
                 <div class="col-md-6">
                     <div class="py-3">
                         <h2>  Reach out to us.</h2>
-                        <p>you can contact us as follows:</p>
+                        <p>You can contact us as follows:</p>
                     </div>
 
                     <div>
@@ -53,7 +53,12 @@
                         <form action="" method="post">
                             {% csrf_token %}
                             {{ form.as_p }}
-                            <input type="submit" value="Submit" class="btn">
+
+                            <div class="d-flex justify-content-center">
+                                <button  type="submit" class="btn btn-lg">Submit</button>
+                            </div>
+                           
+                            <!-- <input type="submit" value="Submit" class="btn btn-lg"> -->
                         </form>
                     </div>
                 </div>

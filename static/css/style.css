@@ -233,8 +233,7 @@ object-fit: cover;
 
 @media (max-width:768px){
   /* 600px or smaller */
-  #hero{
-    /* background-color: orange; */
+  #hero, #our_approach, #our_target{
     text-align: center;
   }
 
@@ -244,8 +243,36 @@ object-fit: cover;
   }
 
   .mission-image{
-    /* visibility: hidden; */
     display: none;
   }
-  
+
+  .approach-heading, .target-heading {
+    padding: 20px;
+  } 
+
+
+}
+
+/* form */
+form > p {
+display: block;
+}
+
+form > p > input, textarea {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+form > div > button {
+  width: 40%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+form > p > label{
+  padding: 10px;
 }
