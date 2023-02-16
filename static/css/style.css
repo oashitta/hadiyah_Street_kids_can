@@ -4,7 +4,6 @@ body {
   box-sizing: border-box;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Roboto', sans-serif; */
   color: #020202;
 }
 
@@ -21,6 +20,15 @@ a{
 a:hover{
   color: #0d8dbb;
 }
+
+.a-white {
+  color: #fff;
+}
+
+.a-white:hover{
+  color: #0d8dbb;
+}
+
 /* buttons */
 .btn{
   background-color: #ff4552;
@@ -116,12 +124,19 @@ color: #fff;
 
 /* home page carousel */
 .c-item{
-  height: 400px;
+  height: 300px;
 }
 
 .c-image{
+  width: 80%;
   height: 100%;
+  margin: 0 auto;
 }
+
+/* .c-text{
+  color: #fff;
+  text-shadow : 0.5px 0.5px black;
+} */
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -181,12 +196,20 @@ color: #fff;
 /* programs modal */
 
 /* volunteers */
-.sponsor-image,
+.sponsor-image{
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-color: #fff;
+  /* border: 1px solid #0d8dbb; */
+}
+
 .leadership-image {
   height: 150px;
   width: 150px;
   border-radius: 100%;
-  background-color: #0d8dbb;
+  background-color: #fff;
+  border: 1px solid #0d8dbb;
 }
 
 /* footer */
