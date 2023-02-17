@@ -27,6 +27,9 @@ def mobile_learning(request):
 def make_an_impact(request):
     return render(request, 'make_an_impact.html', {})
 
+def gallery(request):
+    return render(request, 'gallery.html', {})
+
 def get_in_touch(request):
     if request.method == "POST":
         form = ContactForm(request.POST)

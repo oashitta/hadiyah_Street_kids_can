@@ -186,6 +186,10 @@ color: #fff;
   background-image: linear-gradient(to bottom right, #fdbf00, #ff4552);
 }
 
+.gallery-gradient{
+  background-image: linear-gradient(to bottom right, #0dbb9e, #0d8dbb);
+}
+
 #gallery > div > img:hover{
   cursor: pointer;
   transition: .4s all;

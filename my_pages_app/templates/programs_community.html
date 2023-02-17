@@ -10,7 +10,53 @@
     <p>We believe the immediate environment plays a vital role in helping street children to develop a better self-esteem. The lack of We work directly with community leaders and families by providing them with basic amenities and resources to improve their quality of life. This program will also include free medical consultations and sponsorship of drugs and medical procedures where necessary.</p>
 </div>
 
+
 <div>
-    <h1>GALLERY</h1>
+    <h1>EVENTS</h1>
 </div>
+
+<div class="container-fluid" id="event">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img class="w-100" src="/static/images/target2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Event Name.</h5>
+              <p class="card-text">Brief description of what the event was about. </p>
+            </div>
+            <a href="{% url 'gallery' %}"> View Photos.</a>
+            <div class="card-footer">
+                <small class="text-muted">Date of Event.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img class="w-100" src="/static/images/target2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Event Name</h5>
+              <p class="card-text">Brief description of what the event was about.</p>
+            </div>
+            <a href="{% url 'gallery' %}"> View Photos.</a>
+            <div class="card-footer">
+                <small class="text-muted">Date of Event.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img class="w-100" src="/static/images/target2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Event Name</h5>
+                <p class="card-text">Brief description of what the event was about.</p>
+              </div>
+              <a href="{% url 'gallery' %}"> View Photos.</a>
+              <div class="card-footer">
+                  <small class="text-muted">Date of Event.</small>
+              </div>
+            </div>
+          </div>
+      </div>
+</div>
+
 {% endblock %}

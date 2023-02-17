@@ -16,5 +16,7 @@ urlpatterns = [
     path("mentoringandcounselling/", views.mentoring_counselling, name='mentoring_counselling'),
     path("placementandreintegration/", views.placement_reintegration, name='placement_reintegration'),
     path("mobilelearning/", views.mobile_learning, name='mobile_learning'),
+    path("gallery/", views.gallery, name='gallery'),
+    
 
 ]
