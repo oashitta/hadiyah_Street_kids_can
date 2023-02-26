@@ -200,7 +200,7 @@ color: #fff;
 /* programs modal */
 
 /* volunteers */
-.sponsor-image{
+.partners-image{
   height: 150px;
   width: 150px;
   border-radius: 100%;
@@ -277,7 +277,39 @@ object-fit: cover;
     padding: 20px;
   } 
 
+}
 
+@media (max-width:460px){
+  p, h2 {
+    text-align: center
+  }
+
+  #who_we_are, #our_programs{
+    height: 100px;
+  }
+
+  .navbar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .navbar > a > img{
+    height: 80px;
+  }
+
+  .img-grid{
+    grid-column: 1;
+  }
+
+  .navbar-toggler-icon{
+    grid-column: 4;
+  }
+
+  form > div > button {
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
 }
 
 /* form */
